@@ -6,7 +6,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.fluence.voicerec=false \
     ro.qc.sdk.audio.fluencetype=fluence \
     use.voice.path.for.pcm.voip=false \
-    use.dedicated.device.for.voip=true
+    use.dedicated.device.for.voip=true \
+    lpa.decode=false \
+    tunnel.decode=false
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -37,6 +39,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sensors=1
+
+# Tethering
+PRODUCT_PROPERTY_OVERRIDES += \
+    net.tethering.noprovisioning=true
 
 # WiFi
 PRODUCT_PROPERTY_OVERRIDES += \
